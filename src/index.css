@@ -1,0 +1,182 @@
+/* Reset default margin and font family for the entire document */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #1d2b64, #f8cdda) !important;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Define styles for code blocks */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Highlight for incorrect elements or responses */
+.wrong {
+  background-color: rgba(238, 84, 83, 0.22) !important;
+  border-color: #ee5453 !important;
+  color: #ee5453;
+}
+
+/* Highlight for correct elements or responses */
+.right {
+  background-color: rgba(40, 174, 97, 0.22) !important;
+  border-color: #28ae61 !important;
+  color: #28ae61;
+}
+
+/* Additional styles for icons associated with correct responses */
+.rightIcon {
+  background-color: #28ae61 !important;
+}
+
+/* Additional styles for icons associated with incorrect responses */
+.wrongIcon {
+  background-color: #ee5453 !important;
+}
+
+/* Highlight for selected options */
+.optionSelected {
+  background-color: rgba(61, 31, 70, 0.24) !important;
+  border: 2px solid #3d1f46;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  /* Add styles for small screens */
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Typography styles for headings and paragraphs */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Button styles with hover and active effects */
+.button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #ff4500;
+}
+
+.button:active {
+  background-color: #c23616;
+}
+
+/* Link styles with smooth hover transitions */
+a {
+  text-decoration: none;
+  color: #ff6347;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff4500;
+}
+
+/* Box shadows for elements */
+.box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Form styles for input fields and buttons */
+input[type="text"],
+input[type="email"],
+select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #28ae61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #1f8d4d;
+}
+
+/* Smooth fading transition */
+.transition-fade {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.transition-fade:hover {
+  opacity: 0.8;
+}
+
+/* Custom styles for specific elements */
+.custom-header {
+  font-size: 32px;
+  color: #fff;
+}
+
+.custom-footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  color: #777;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Container for the form and other content */
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
